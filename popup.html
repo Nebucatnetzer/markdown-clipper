@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Obsidian-Clipper</title>
+    <link rel="stylesheet" href="css/spectre.min.css" />
+    <link rel="stylesheet" href="css/spectre-exp.min.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+  </head>
+
+  <body>
+    <div class="card" id="main-card">
+        <div class="action-buttons">
+          <button
+            id="archived-icon"
+            data-apicall="SaveArchived"
+            class="action-button card-meta icon icon-checkmark-full"
+            data-isset="false"
+            data-seticon="icon-checkmark-full"
+            data-seticon-title="Set_this_article_as_archived_into_Wallabag"
+            data-unseticon="icon-checkmark"
+            data-unseticon-title="Unset_this_article_as_archived_into_Wallabag"
+            title="Set this article as archived into Wallabag"
+          >
+            <span
+              class="sr-only"
+              data-i18n="Set_this_article_as_archived_into_Wallabag"
+              data-i18n-attr="title|Set_this_article_as_archived_into_Wallabag"
+              >Set_this_article_as_archived_into_Wallabag</span
+            >
+          </button>
+        </div>
+      </div>
+
+      <div class="card-footer" id="tags">
+        <div class="form-autocomplete">
+          <div
+            class="form-autocomplete-input form-input"
+            id="tags-input-container"
+          >
+            <span class="card-meta float-left icon icon-tags"></span>
+            <!--here we add topics -->
+            <input
+              class="form-input"
+              type="text"
+              placeholder="type topics here"
+              id="tags-input"
+            />
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
