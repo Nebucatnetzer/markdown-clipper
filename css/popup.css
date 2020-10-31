@@ -1,18 +1,9 @@
-@font-face {
-    font-family: 'Roboto';
-    src:
-        url('../fonts/Roboto-Regular.woff2') format('woff2'),
-        url('../fonts/Roboto-Regular.woff') format('woff'),
-        url('../fonts/Roboto-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     width: 450px;
     padding: 3px;
 }
-#card-title{
+
+#card-title {
     cursor: pointer;
     color: #039be5;
     font-family: 'Roboto', sans-serif;
@@ -78,8 +69,9 @@ body {
 .form-autocomplete-item {
     display: inline;
 }
+
 .chip-selected {
-   border: 1px solid black;
+    border: 1px solid black;
 }
 
 .form-autocomplete-input {
