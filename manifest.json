@@ -14,10 +14,10 @@
     },
     "background": {
         "scripts": [
-            "background/turndown.js",
-            "background/turndown-plugin-gfm.js",
-            "background/Readability.js",
-            "background/background.js"
+            "js/turndown.js",
+            "js/turndown-plugin-gfm.js",
+            "js/Readability.js",
+            "js/background.js"
         ]
     }
 }
