@@ -18,27 +18,24 @@ function convertArticleToMarkdown(article, source) {
     turndownService.use(gfm)
 
     //Add header for  Obsidian
-    header = "- meta:\n";
+    var header = "- meta:\n";
     header = header + "  - topics: [[not-categorised]]\n";
     header = header + "  - date: [[2020-11-04]]\n";
     header = header + "  - url: " + source + "\n";
     header = header + "------\n\n";
-    markdown = header;
 
-    var markdown = markdown + turndownService.turndown(article.content);
+    var markdown = turndownService.turndown(article.content);
 
     //add summary if exist
-    if (!!article.excerpt) {
-        markdown = "\n> " + article.excerpt + "\n\n" + markdown;
+    if (typeof article.excerpt !== "undefined") {
+        markdown = "\n" + article.excerpt + "\n\n" + markdown;
     }
 
-    //add article titel as header
+    //add article title
     markdown = "# " + article.title + "\n" + markdown;
 
-    //add source if exist
-    if (!!source) {
-        markdown = markdown + "\n\n\n" + "[Source](" + source + ")";
-    }
+    //add Obsidian header
+    markdown = header + markdown;
 
     return markdown;
 }
