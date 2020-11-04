@@ -7,8 +7,4 @@ function notifyExtension() {
     }
 }
 
-browser.runtime.onMessage.addListener((message) => {
-    if (message.command === "extract") {
-        notifyExtension();
-    }
-});
+notifyExtension();

@@ -10,8 +10,7 @@
         "downloads"
     ],
     "browser_action": {
-        "default_title": "obsidian-clipper",
-        "default_popup": "popup.html"
+        "default_title": "obsidian-clipper"
     },
     "background": {
         "scripts": [
