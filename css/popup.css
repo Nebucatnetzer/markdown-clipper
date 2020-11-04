@@ -54,6 +54,10 @@ body {
     box-shadow: 0 0 0 0.1rem rgba(87, 85, 217, 0.2);
 }
 
+.hidden {
+    display: none;
+}
+
 #card-image {
     max-width: 444px;
     max-height: 250px;
