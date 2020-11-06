@@ -13,7 +13,11 @@ function createReadableVersion(dom) {
 }
 
 function convertArticleToMarkdown(article, source) {
-    var turndownService = new TurndownService();
+    var turndownService = new TurndownService({
+        headingStyle: "atx",
+        bulletListMarker: "-",
+        codeBlockStyle: "fenced",
+    });
     var gfm = turndownPluginGfm.gfm;
     turndownService.use(gfm);
 
