@@ -4,13 +4,23 @@
     "version": "1.0",
     "author": "Andreas Zweili",
     "description": "A webclipper to download sites in markdown format. It is not guaranteed to work with all websites. Originally developed by Enrico Kaack.",
+    "icons": {
+        "16": "/icons/favicon-16x16.png",
+        "32": "/icons/favicon-32x32.png",
+        "192": "/icons/favicon-192x192.png",
+        "512": "/icons/favicon-512x512.png"
+    },
     "permissions": [
         "activeTab",
         "tabs",
         "downloads"
     ],
     "browser_action": {
-        "default_title": "obsidian-clipper"
+        "default_title": "obsidian-clipper",
+        "default_icon": {
+            "16": "/icons/favicon-16x16.png",
+            "32": "/icons/favicon-32x32.png"
+        }
     },
     "background": {
         "scripts": [
