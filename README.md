@@ -31,6 +31,11 @@ Chrome](https://chrome.google.com/webstore/detail/obsidian-clipper/cjedbglnccaio
   browser bar is clicked.
 - Manage Downloads: neccessary to be able to download the markdown file.
 
+# Todo
+
+- [ ] Implement pop-up
+- [ ] Add settings to customize the header
+
 ---
 
 The icon was created using [Favicon.io](https://favicon.io)
