@@ -25,9 +25,8 @@ function convertArticleToMarkdown(article, source) {
     var header = "- meta:\n";
     header = header + "  - topics: [[not-categorised]]\n";
     var date = new Date();
-    var today =
-        date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
-    header = header + "  - date: [[" + today + "]]\n";
+    var today = date.toISOString();
+    header = header + "  - date: [[" + today.split("T")[0] + "]]\n";
     header = header + "  - url: " + source + "\n";
     header = header + "------\n\n";
 
