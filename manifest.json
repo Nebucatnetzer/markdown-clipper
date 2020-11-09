@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "obsidian-clipper",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Andreas Zweili",
     "description": "A webclipper to download sites in markdown format. It is not guaranteed to work with all websites. Originally developed by Enrico Kaack.",
     "icons": {
